@@ -66,7 +66,7 @@ All background readings are stored in: [Background readings folder](./background
 
 | Title | Brief description | Link to file |
 |---|---|---|
-| Jeff Sackmann ATP Tennis Data | Describes the historical ATP data source, including players, rankings, results, and match stats | `background_readings/jeff_sackmann_atp_data.pdf` |
+| Jeff Sackmann ATP Tennis Data | Describes the historical ATP data source, including players, rankings, results, and match stats | [Jeff_sackmann_atp_repo](./background%20readings/jeff_sackmann_atp_repo.pdf) |
 | ATP Rankings FAQ | Explains how ATP rankings work and why they are important in tennis | `background_readings/atp_rankings_faq.pdf` |
 | An Introduction to Tennis Elo | Introduces Elo ratings and why they may be useful for tennis forecasting | `background_readings/tennis_elo_intro.pdf` |
 | Analysis and Forecasting of Tennis Matches | Academic research on statistical modeling of tennis outcomes | `background_readings/tennis_forecasting_paper.pdf` |
