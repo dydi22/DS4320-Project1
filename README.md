@@ -61,7 +61,7 @@ This project lives at the intersection of sports analytics, relational data engi
 
 ### Background Reading Folder
 
-All background readings are stored in: [background_reading](./background_reading/)
+All background readings are stored in: [background_reading](./background_readings/)
 
 | Title | Brief description | Link to file |
 |---|---|---|
@@ -107,7 +107,7 @@ Several important design decisions shaped this project. First, I used a relation
 
 Logical ER diagram:
 
-![ER Diagram](./images/er_diagram.png)
+![ER Diagram](./images/pic.jpg)
 
 ### Data Table
 
