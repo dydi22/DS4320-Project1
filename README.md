@@ -170,19 +170,6 @@ Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 | `load_score` | 0.00 | 30.17 | 54.50 | 0.00 | 0.00 | 0.70 | 42.12 | 564.20 | Engineered feature sensitive to weighting choices |
 | `utr_singles` | 0.00 | 12.50 | 5.03 | 0.00 | 13.71 | 14.37 | 14.87 | 16.26 | Optional source with incomplete historical coverage |
 
-### Logical Key Relationships
-
-The relational design of the project centers on a player hub, a match hub, tournament tables, and supporting history tables. Important logical relationships include:
-
-- `player_rankings.player_id -> players.player_id`
-- `player_match_stats.player_id -> players.player_id`
-- `player_match_stats.opponent_id -> players.player_id`
-- `player_match_stats.match_id -> matches.match_id`
-- `player_match_load_features.player_id -> players.player_id`
-- `player_match_load_features.opponent_id -> players.player_id`
-- `player_match_load_features.match_id -> matches.match_id`
-- `point_events.match_id -> matches.match_id`
-- `tournament_editions.tournament_id -> tournaments.tournament_id`
 
 ---
 
