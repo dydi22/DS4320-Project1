@@ -157,19 +157,18 @@ Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 
 ### Quantification of Uncertainty for Numerical Features
 
-
 | Numerical Feature | Missing % | Mean | Std. Dev. | Min | 25th % | Median | 75th % | Max | Notes on uncertainty |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| `rank` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Rank varies over time and may be missing for some older rows |
-| `points` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Rankings points are date-dependent and can shift quickly |
-| `minutes` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Match duration can vary widely by round, format, and competitiveness |
-| `ace` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Some data sources may have incomplete stat coverage |
-| `df` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Distribution may be right-skewed |
-| `svpt` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Depends on match length and serving patterns |
-| `player_minutes_last_7d` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Workload depends on schedule density and may be zero after long breaks |
-| `player_matches_last_7d` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Discrete count feature with non-normal distribution |
-| `load_score` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Engineered feature sensitive to weighting choices |
-| `utr_singles` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | `[x]` | Optional source with incomplete historical coverage |
+| `rank` | 0.00 | 846.10 | 525.55 | 1.00 | 402.00 | 813.00 | 1252.00 | 2271.00 | Rank varies over time and may be missing for some older rows |
+| `points` | 11.42 | 117.40 | 431.61 | 1.00 | 2.00 | 11.00 | 68.00 | 16950.00 | Rankings points are date-dependent and can shift quickly |
+| `minutes` | 50.59 | 104.61 | 39.80 | 0.00 | 76.00 | 97.00 | 126.00 | 1146.00 | Match duration can vary widely by round, format, and competitiveness |
+| `ace` | 49.04 | 5.73 | 5.09 | 0.00 | 2.00 | 4.00 | 8.00 | 113.00 | Some data sources may have incomplete stat coverage |
+| `df` | 49.04 | 3.08 | 2.52 | 0.00 | 1.00 | 3.00 | 4.00 | 26.00 | Distribution may be right-skewed |
+| `svpt` | 49.04 | 79.55 | 29.45 | 0.00 | 58.00 | 74.00 | 96.00 | 491.00 | Depends on match length and serving patterns |
+| `player_minutes_last_7d` | 0.00 | 84.40 | 154.51 | 0.00 | 0.00 | 0.00 | 119.00 | 1605.00 | Workload depends on schedule density and may be zero after long breaks |
+| `player_matches_last_7d` | 0.00 | 1.64 | 1.82 | 0.00 | 0.00 | 1.00 | 3.00 | 19.00 | Discrete count feature with non-normal distribution |
+| `load_score` | 0.00 | 30.17 | 54.50 | 0.00 | 0.00 | 0.70 | 42.12 | 564.20 | Engineered feature sensitive to weighting choices |
+| `utr_singles` | 0.00 | 12.50 | 5.03 | 0.00 | 13.71 | 14.37 | 14.87 | 16.26 | Optional source with incomplete historical coverage |
 
 ### Logical Key Relationships
 
