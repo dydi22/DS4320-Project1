@@ -61,7 +61,8 @@ This project lives at the intersection of sports analytics, relational data engi
 
 ### Background Reading Folder
 
-All background readings are stored in: [background_reading](./background_readings/)
+All background readings are stored in: [Background readings folder](./background%20readings/)
+
 
 | Title | Brief description | Link to file |
 |---|---|---|
