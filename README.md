@@ -113,20 +113,18 @@ Logical ER diagram:
 
 Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 
-**OneDrive folder:** [Exported CSV data](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f)
-
-| Table | Description | Access |
+| Table | Description | Link |
 |---|---|---|
-| `players` | Master player table containing player identity and latest profile fields | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `player_rankings` | Historical ATP ranking records by player and ranking date | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `player_utr_ratings` | Historical UTR ratings by player and date | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `player_aliases` | Cross-source player identity mapping table | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `tournaments` | Canonical tournament dimension table | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `tournament_editions` | Tournament season/year editions with location and surface context | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `matches` | Match fact table containing match-level context and identifiers | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `player_match_stats` | Per-player match-level statistics derived from historical matches | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `player_match_load_features` | Per-player rolling workload and travel feature table | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
-| `point_events` | Point-by-point event table for supported match sources | Available in the [OneDrive folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=R1wk2f) |
+| `players` | Master player table containing player identity and latest profile fields | [players.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/players.csv?d=w166da6ed03d6406393f9a9152195ae3f&csf=1&web=1&e=iinbSS) |
+| `player_rankings` | Historical ATP ranking records by player and ranking date | [player_rankings.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_rankings.csv?d=w4f24bbe7b6874cbba0d489ec1db7068c&csf=1&web=1&e=hQkG89) |
+| `player_utr_ratings` | Historical UTR ratings by player and date | [player_utr_ratings.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_utr_ratings.csv?d=we50e49c940b24aa994c586a19e283e7a&csf=1&web=1&e=PvISYi) |
+| `player_aliases` | Cross-source player identity mapping table | [player_aliases.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_aliases.csv?d=w2c204b60e7f440e08fecd3bbbf8939af&csf=1&web=1&e=XCY2hq) |
+| `tournaments` | Canonical tournament dimension table | [tournaments.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/tournaments.csv?d=w62d95f16882c458e880fd52b62e4cba4&csf=1&web=1&e=HcuvJd) |
+| `tournament_editions` | Tournament season/year editions with location and surface context | [tournament_editions.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/tournament_editions.csv?d=w24b5ddcd269843e1a52b720f0f0b5618&csf=1&web=1&e=DOTD1j) |
+| `matches` | Match fact table containing match-level context and identifiers | [matches.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/matches.csv?d=wf46824e3851f4b56965303d1b6e027fe&csf=1&web=1&e=LWt3vP) |
+| `player_match_stats` | Per-player match-level statistics derived from historical matches | [player_match_stats.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_match_stats.csv?d=w87f7e5a393f2434f9ab82bed6cd58925&csf=1&web=1&e=nRuUPp) |
+| `player_match_load_features` | Per-player rolling workload and travel feature table | [player_match_load_features.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_match_load_features.csv?d=wa00050f0e61e470eb79faacc6252660d&csf=1&web=1&e=63sRF4) |
+| `point_events` | Point-by-point event table for supported match sources | [point_events.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/point_events.csv?d=w95647d52f764438ea35ba5ddb3f10712&csf=1&web=1&e=Dfl5zy) |
 
 ### Data Dictionary
 
