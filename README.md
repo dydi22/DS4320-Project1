@@ -3,6 +3,16 @@
 ## Executive Summary
 This repository contains my DS 4320 Project 1 on predicting ATP men’s singles match outcomes using a relational dataset built from historical tennis records. The project includes data acquisition, relational modeling, DuckDB-based analysis, a machine learning pipeline, metadata documentation, a press release, and linked project data.
 
+## Project Navigation
+- [Executive Summary](#executive-summary)
+- [Problem Definition](#problem-definition)
+- [Domain Exposition](#domain-exposition)
+- [Background Readings](#background-reading-folder)
+- [Data Creation](#data-creation)
+- [Code Used to Create the Data](#code-used-to-create-the-data)
+- [Bias Identification](#bias-identification)
+- [Rationale for Critical Decisions and Uncertainty](#rationale-for-critical-decisions-and-uncertainty)
+
 **Name:** Dylan Dietrich  
 **NetID:** atv7xh  
 **DOI:** [your DOI link]  
@@ -10,6 +20,14 @@ This repository contains my DS 4320 Project 1 on predicting ATP men’s singles 
 **Data:** [data folder](./data/)  
 **Pipeline:** [pipeline notebook](./notebooks/your_notebook.ipynb)  
 **License:** [MIT License](./LICENSE)
+
+**Name:** Dylan Dietrich  
+**NetID:** atv7xh  
+**DOI:** [your DOI link here]  
+**Press Release:** [press_realease.md](./press_realease.md)  
+**Background Readings Folder:** [background readings](./background%20readings/)  
+**Code Folder:** [code](./code/)  
+**Images Folder:** [images](./images/)
 
 ## Problem Definition
 
@@ -61,16 +79,15 @@ This project lives at the intersection of sports analytics, relational data engi
 
 ### Background Reading Folder
 
-All background readings are stored in: [Background readings folder](./background%20readings/)
+All background readings are stored in: [background readings](./background%20readings/)
 
-
-| Title | Brief description | Link to file |
+| Title | Brief description | Link |
 |---|---|---|
-| Jeff Sackmann ATP Tennis Data | Describes the historical ATP data source, including players, rankings, results, and match stats | [Jeff_sackmann_atp_repo](./background%20readings/Jeff_Sackamnn.pdf) |
-| ATP Rankings FAQ | Explains how ATP rankings work and why they are important in tennis | [ATP Rankings FAQ](./background%20readings/atp_rankings_faq.pdf)  |
-| An Introduction to Tennis Elo | Introduces Elo ratings and why they may be useful for tennis forecasting | [Tennis Elo](./background%20readings/tennis_elo_intro.pdf)  |
-| Analysis and Forecasting of Tennis Matches | Academic research on statistical modeling of tennis outcomes | [Tennis Forecasting](./background%20readings/tennis_forecasting_paper.pdf)  |
-| Match Charting Project | Overview of detailed point-by-point tennis data for advanced analysis | [Match Charting Project](./background%20readings/match_charting_project.pdf)  |
+| Jeff Sackmann ATP Tennis Data | Describes the historical ATP data source, including players, rankings, results, and match stats | [Jeff_Sackamnn.pdf](./background%20readings/Jeff_Sackamnn.pdf) |
+| ATP Rankings FAQ | Explains how ATP rankings work and why they are important in tennis | [atp_rankings_faq.pdf](./background%20readings/atp_rankings_faq.pdf) |
+| Match Charting Project | Overview of detailed point-by-point tennis data for advanced analysis | [match_charting_project.pdf](./background%20readings/match_charting_project.pdf) |
+| Tennis Elo Introduction | Introduces Elo ratings and why they may be useful for tennis forecasting | [tennis_elo_intro.pdf](./background%20readings/tennis_elo_intro.pdf) |
+| Tennis Forecasting Paper | Academic research on statistical modeling of tennis outcomes | [tennis_forecasting_paper.pdf](./background%20readings/tennis_forecasting_paper.pdf) |
 
 ---
 ## Data Creation
