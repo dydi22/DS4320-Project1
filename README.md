@@ -22,6 +22,32 @@ This repository contains my DS 4320 Project 1 on predicting ATP men’s singles 
 **License:** [MIT License](./LICENSE)
 
 
+A slightly more polished version, with comments, would be:
+
+```markdown
+## Repository Structure
+
+```text
+DS4320-Project1/
+├── README.md                           # Project overview and submission details
+├── press_realease.md                   # Press release
+├── background readings/                # Background reading PDFs
+│   ├── Jeff_Sackamnn.pdf
+│   ├── atp_rankings_faq.pdf
+│   ├── match_charting_project.pdf
+│   ├── tennis_elo_intro.pdf
+│   └── tennis_forecasting_paper.pdf
+├── code/                               # Python scripts for database building and modeling
+│   ├── database.py
+│   ├── run_tennis_database_pipeline.py
+│   ├── train_model.py
+│   └── update_atp_main_data.py
+└── images/                             # Figures used in the project
+    ├── ROC.png
+    └── pic.jpg
+```
+
+
 ## Problem Definition
 
 ### Initial General Problem and Refined Specific Problem Statement
