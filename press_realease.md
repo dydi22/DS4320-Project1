@@ -37,7 +37,7 @@ More broadly, this project demonstrates how database design and machine learning
 The key visualization for this project is the ROC curve from the binary classification model.
 
 
-![ROC Curve](./images/pipeline_check_roc.png)
+![ROC Curve](./images/ROC.png)
 
 ## Closing Statement
 
