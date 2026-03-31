@@ -24,7 +24,7 @@ This repository contains my DS 4320 Project 1 on predicting ATP men’s singles 
 
 A slightly more polished version, with comments, would be:
 
-```markdown
+
 ## Repository Structure
 
 ```text
