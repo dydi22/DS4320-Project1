@@ -16,7 +16,7 @@ A second challenge is that tennis match prediction is inherently uncertain. Even
 
 ## Solution Description
 
-This project creates a relational database from ATP tennis data and related feature tables. The database includes player information, ranking history, UTR ratings, tournament editions, match records, player-level match statistics, rolling workload features, and point-level event data. These tables are linked through shared identifiers so that they can be queried efficiently in DuckDB.
+This project creates a relational database from ATP tennis data and related feature tables. The database includes player information, ranking history, UTR ratings, tournament editions, match records, player-level match statistics, rolling workload features, and point-level event data. These tables are linked through shared identifiers so that they can be queried efficiently in DuckDB. Keep in mind that not all these features are used right now to predcit the matches because it was hard to get historical- UTR rnakings and -point by point data. These features are currently getting scrapped everyday and uploaded into the database so that in the near feature we will be able to also use them to train the model. 
 
 Using SQL, I prepared a modeling dataset that combines:
 - player and opponent rankings
@@ -36,10 +36,6 @@ More broadly, this project demonstrates how database design and machine learning
 
 The key visualization for this project is the ROC curve from the binary classification model.
 
-**Suggested caption:**  
-*ROC Curve for the ATP Match Outcome Model. The curve shows that the model separates wins from losses substantially better than random guessing, consistent with an ROC AUC of approximately 0.73.*
-
-You can insert the figure here if you want:
 
 ![ROC Curve](./images/pipeline_check_roc.png)
 
