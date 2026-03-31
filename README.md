@@ -15,10 +15,10 @@ This repository contains my DS 4320 Project 1 on predicting ATP men’s singles 
 
 **Name:** Dylan Dietrich  
 **NetID:** atv7xh  
-**DOI:** [your DOI link]  
-**Press Release:** [press_realease.md](./press_release.md)
-**Data:** [data folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=ISlAc8)
-**Pipeline:** [pipeline notebook](./pipeline/pipeline_demo.ipynb)
+**DOI:** [Your DOI link here](#)  
+**Press Release:** [press_release.md](./press_release.md)  
+**Data:** [Data Folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=ISlAc8)  
+**Pipeline:** [pipeline_demo.ipynb](./pipeline/pipeline_demo.ipynb)  
 **License:** [MIT License](./LICENSE)
 
 
