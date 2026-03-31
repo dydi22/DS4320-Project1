@@ -81,16 +81,15 @@ The core raw data for this project comes from the Jeff Sackmann `tennis_atp` dat
 
 In addition to the ATP historical files, the project supports optional enrichment from ranking history, UTR rating history, tournament location data, and point-by-point or live update sources (when it was possible). These additional sources are not all required for the base version of the project, but they allow the database to support richer feature engineering such as workload, travel, and player timeline analysis. The final project dataset is therefore not a direct copy of one source. It is a secondary dataset built by cleaning, joining, and normalizing multiple tennis-related sources into a consistent relational structure.
 
+
 ### Code Used to Create the Data
 
 | File | Purpose | Link |
 |---|---|---|
-| `scripts/run_tennis_database_pipeline.py` | Main database build and refresh pipeline | [run_tennis_database_pipeline.py](./scripts/run_tennis_database_pipeline.py) |
-| `src/tennis_model/database.py` | Defines the database schema and table logic | [database.py](./src/tennis_model/database.py) |
-| `scripts/update_atp_main_data.py` | Refreshes ATP raw match data files | [update_atp_main_data.py](./scripts/update_atp_main_data.py) |
-| `scripts/build_live_state.py` | Creates refreshed player state and match history artifacts | [build_live_state.py](./scripts/build_live_state.py) |
-| `scripts/train_model.py` | Builds features and trains the prediction model | [train_model.py](./scripts/train_model.py) |
-| `notebooks/project1_pipeline.ipynb` | Jupyter notebook showing the end-to-end pipeline | [project1_pipeline.ipynb](./notebooks/project1_pipeline.ipynb) |
+| `code/run_tennis_database_pipeline.py` | Main database build and refresh pipeline | [run_tennis_database_pipeline.py](./code/run_tennis_database_pipeline.py) |
+| `code/database.py` | Defines the database schema and table logic | [database.py](./code/database.py) |
+| `code/update_atp_main_data.py` | Refreshes ATP raw match data files | [update_atp_main_data.py](./code/update_atp_main_data.py) |
+| `code/train_model.py` | Builds features and trains the prediction model | [train_model.py](./code/train_model.py) |
 
 ### Bias Identification
 
