@@ -209,21 +209,6 @@ Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 
 ---
 
-## Repository Organization
-
-| Folder / File | Purpose |
-|---|---|
-| `README.md` | Project overview and documentation |
-| `press_release.md` | Separate press release aimed at nontechnical readers |
-| `background_reading/` | Background articles and supporting readings |
-| `data/` | Project data artifacts and templates |
-| `notebooks/` | Jupyter notebook pipeline and markdown export |
-| `scripts/` | Reproducible pipeline and modeling scripts |
-| `src/` | Source code for the database and feature logic |
-| `images/` | ER diagram and publication-quality charts |
-| `LICENSE` | License file |
-
----
 
 
 
