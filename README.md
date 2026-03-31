@@ -40,7 +40,7 @@ The motivation for this project is that I always feel like the tennis odds for t
 
 ### Press Release Headline and Link
 
-**Headline:** *New Tennis Match Prediction System Uses Rankings, Form, and Workload to Estimate ATP Match Outcomes*  
+**Headline:** *Relational Tennis Database Improves ATP Match Prediction by Combining Rankings, Workload, and Match Context*  
 **Link:** [press_release.md](./press_release.md)
 
 ---
