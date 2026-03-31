@@ -199,11 +199,7 @@ Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 
 ---
 
-## Data Storage
 
-The project dataset is constructed using the relational model and contains more than four linked tables. Data are stored as CSV and/or parquet exports in a UVA OneDrive folder linked from this README. Core relational entities include players, rankings, tournaments, tournament editions, matches, player-level match statistics, workload features, and point-by-point events.
-
----
 
 
 
