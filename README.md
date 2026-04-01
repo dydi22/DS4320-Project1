@@ -13,8 +13,6 @@ This repository contains my DS 4320 Project 1 on predicting ATP men’s singles 
 **License:** [MIT License](./LICENSE)
 
 
-A slightly more polished version, with comments, would be:
-
 
 ## Repository Structure
 
@@ -156,9 +154,9 @@ Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 | `point_events` | Point-by-point event table for supported match sources; currently only partially populated because historical point-level data is difficult to obtain consistently
  | [point_events.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/point_events.csv?d=w95647d52f764438ea35ba5ddb3f10712&csf=1&web=1&e=Dfl5zy) |
 
- ### Note on UTR and Point-by-Point Data
+### Note on UTR and Point-by-Point Data
 
-Although this project’s relational schema already includes support for UTR rating history and point-by-point event data, these components are not yet as complete as the core ATP match and ranking tables. Historical UTR and point-by-point data were significantly harder to obtain consistently across players, tournaments, and seasons, so current coverage remains uneven. These tables are therefore included as part of the long-term database design and are partially populated, but they are not yet complete enough to provide the strongest possible contribution to the current predictive model. Expanding these sources is one of the main priorities for future development of the project.
+Although this project’s relational schema already includes support for UTR rating history and point-by-point event data, these components are not yet as complete as the core ATP match and ranking tables. Historical UTR and point-by-point data were significantly harder to obtain consistently across players, tournaments, and seasons, so current coverage remains uneven. These tables are therefore included as part of the long-term database design and are partially populated, but they are not yet complete enough to contribute as strongly as they could to the current predictive model. Expanding these sources is one of the main priorities for future development of the project.
 
 ### Data Dictionary
 
