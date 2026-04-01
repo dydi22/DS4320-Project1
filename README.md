@@ -19,7 +19,7 @@ This repository contains my DS 4320 Project 1 on predicting ATP men’s singles 
 ```text
 DS4320-Project1/
 ├── README.md                           # Project overview and submission details
-├── press_realease.md                   # Press release
+├── press_release.md                   # Press release
 ├── background readings/                # Background reading PDFs
 │   ├── Jeff_Sackamnn.pdf
 │   ├── atp_rankings_faq.pdf
@@ -151,8 +151,7 @@ Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 | `matches` | Match fact table containing match-level context and identifiers | [matches.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/matches.csv?d=wf46824e3851f4b56965303d1b6e027fe&csf=1&web=1&e=LWt3vP) |
 | `player_match_stats` | Per-player match-level statistics derived from historical matches | [player_match_stats.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_match_stats.csv?d=w87f7e5a393f2434f9ab82bed6cd58925&csf=1&web=1&e=nRuUPp) |
 | `player_match_load_features` | Per-player rolling workload and travel feature table | [player_match_load_features.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_match_load_features.csv?d=wa00050f0e61e470eb79faacc6252660d&csf=1&web=1&e=63sRF4) |
-| `point_events` | Point-by-point event table for supported match sources; currently only partially populated because historical point-level data is difficult to obtain consistently
- | [point_events.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/point_events.csv?d=w95647d52f764438ea35ba5ddb3f10712&csf=1&web=1&e=Dfl5zy) |
+| `point_events` | Point-by-point event table for supported match sources; currently only partially populated because historical point-level data is difficult to obtain consistently| [point_events.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/point_events.csv?d=w95647d52f764438ea35ba5ddb3f10712&csf=1&web=1&e=Dfl5zy) |
 
 ### Note on UTR and Point-by-Point Data
 
