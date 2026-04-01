@@ -3,15 +3,6 @@
 ## Executive Summary
 This repository contains my DS 4320 Project 1 on predicting ATP men’s singles match outcomes using a relational dataset built from historical tennis records. The project includes data acquisition, relational modeling, DuckDB-based analysis, a machine learning pipeline, metadata documentation, a press release, and linked project data.
 
-## Project Navigation
-- [Executive Summary](#executive-summary)
-- [Problem Definition](#problem-definition)
-- [Domain Exposition](#domain-exposition)
-- [Background Readings](#background-reading-folder)
-- [Data Creation](#data-creation)
-- [Code Used to Create the Data](#code-used-to-create-the-data)
-- [Bias Identification](#bias-identification)
-- [Rationale for Critical Decisions and Uncertainty](#rationale-for-critical-decisions-and-uncertainty)
 
 **Name:** Dylan Dietrich  
 **NetID:** atv7xh  
@@ -117,6 +108,8 @@ The core raw data for this project comes from the Jeff Sackmann `tennis_atp` dat
 
 In addition to the ATP historical files, the project supports optional enrichment from ranking history, UTR rating history, tournament location data, and point-by-point or live update sources (when it was possible). These additional sources are not all required for the base version of the project, but they allow the database to support richer feature engineering such as workload, travel, and player timeline analysis. The final project dataset is therefore not a direct copy of one source. It is a secondary dataset built by cleaning, joining, and normalizing multiple tennis-related sources into a consistent relational structure.
 
+Although the relational schema already includes support for UTR rating history and point-by-point event data, these components are not yet as complete or reliable as the core ATP match and ranking tables. Historical UTR and point-by-point data were much harder to obtain consistently across players, tournaments, and seasons, so current coverage is still uneven. For that reason, these tables are included as part of the long-term design of the database, but they are not yet populated densely enough to serve as the strongest features in the current version of the model. Expanding and improving these historical data sources is an important direction for future work.
+
 
 ### Code Used to Create the Data
 
@@ -153,14 +146,19 @@ Due to GitHub file size limits, the exported CSV files are stored in OneDrive.
 |---|---|---|
 | `players` | Master player table containing player identity and latest profile fields | [players.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/players.csv?d=w166da6ed03d6406393f9a9152195ae3f&csf=1&web=1&e=iinbSS) |
 | `player_rankings` | Historical ATP ranking records by player and ranking date | [player_rankings.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_rankings.csv?d=w4f24bbe7b6874cbba0d489ec1db7068c&csf=1&web=1&e=hQkG89) |
-| `player_utr_ratings` | Historical UTR ratings by player and date | [player_utr_ratings.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_utr_ratings.csv?d=we50e49c940b24aa994c586a19e283e7a&csf=1&web=1&e=PvISYi) |
+| `player_utr_ratings` | Historical UTR ratings by player and date when available; current historical coverage is limited | [player_utr_ratings.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_utr_ratings.csv?d=we50e49c940b24aa994c586a19e283e7a&csf=1&web=1&e=PvISYi) |
 | `player_aliases` | Cross-source player identity mapping table | [player_aliases.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_aliases.csv?d=w2c204b60e7f440e08fecd3bbbf8939af&csf=1&web=1&e=XCY2hq) |
 | `tournaments` | Canonical tournament dimension table | [tournaments.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/tournaments.csv?d=w62d95f16882c458e880fd52b62e4cba4&csf=1&web=1&e=HcuvJd) |
 | `tournament_editions` | Tournament season/year editions with location and surface context | [tournament_editions.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/tournament_editions.csv?d=w24b5ddcd269843e1a52b720f0f0b5618&csf=1&web=1&e=DOTD1j) |
 | `matches` | Match fact table containing match-level context and identifiers | [matches.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/matches.csv?d=wf46824e3851f4b56965303d1b6e027fe&csf=1&web=1&e=LWt3vP) |
 | `player_match_stats` | Per-player match-level statistics derived from historical matches | [player_match_stats.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_match_stats.csv?d=w87f7e5a393f2434f9ab82bed6cd58925&csf=1&web=1&e=nRuUPp) |
 | `player_match_load_features` | Per-player rolling workload and travel feature table | [player_match_load_features.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/player_match_load_features.csv?d=wa00050f0e61e470eb79faacc6252660d&csf=1&web=1&e=63sRF4) |
-| `point_events` | Point-by-point event table for supported match sources | [point_events.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/point_events.csv?d=w95647d52f764438ea35ba5ddb3f10712&csf=1&web=1&e=Dfl5zy) |
+| `point_events` | Point-by-point event table for supported match sources; currently only partially populated because historical point-level data is difficult to obtain consistently
+ | [point_events.csv](https://myuva-my.sharepoint.com/:x:/r/personal/atv7xh_virginia_edu/Documents/Data/point_events.csv?d=w95647d52f764438ea35ba5ddb3f10712&csf=1&web=1&e=Dfl5zy) |
+
+ ### Note on UTR and Point-by-Point Data
+
+Although this project’s relational schema already includes support for UTR rating history and point-by-point event data, these components are not yet as complete as the core ATP match and ranking tables. Historical UTR and point-by-point data were significantly harder to obtain consistently across players, tournaments, and seasons, so current coverage remains uneven. These tables are therefore included as part of the long-term database design and are partially populated, but they are not yet complete enough to provide the strongest possible contribution to the current predictive model. Expanding these sources is one of the main priorities for future development of the project.
 
 ### Data Dictionary
 
