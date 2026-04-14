@@ -8,7 +8,7 @@ This repository contains my DS 4320 Project 1 on predicting ATP men’s singles 
 **NetID:** atv7xh  
 **DOI:** [![DOI](https://zenodo.org/badge/1195709669.svg)](https://doi.org/10.5281/zenodo.19362807)  
 **Press Release:** [press_release.md](./press_release.md)  
-**Data:** [Data Folder](https://myuva-my.sharepoint.com/:f:/r/personal/atv7xh_virginia_edu/Documents/Data?csf=1&web=1&e=ISlAc8)  
+**Data:** [Data Folder](https://myuva-my.sharepoint.com/:f:/g/personal/atv7xh_virginia_edu/IgAtKt-MMrl9R7GdWQfPRX-oASv2DTOTq33F9BMb37q7oYw?e=N5grLH)  
 **Pipeline:** [pipeline_demo.ipynb](./pipeline/pipeline_demo.ipynb)  
 **License:** [MIT License](./LICENSE)
 
